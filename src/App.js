@@ -84,9 +84,9 @@ function App() {
       
      
       <Dialog open={openDialog} onClose={handleDialogClose}>
-        <DialogTitle>Order for {selectedPatient ? selectedPatient.Name : ''}</DialogTitle>
+        <DialogTitle>病患： {selectedPatient ? selectedPatient.Name : ''} </DialogTitle>
         <DialogContent>
-          <DialogContentText>Message:</DialogContentText>
+          <DialogContentText>醫囑:</DialogContentText>
           <input type="text" value={orderMessage} onChange={handleOrderMessageChange} />
         </DialogContent>
         <DialogActions>
